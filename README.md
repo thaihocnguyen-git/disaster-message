@@ -45,20 +45,20 @@
     (./images/categories_sum.PNG)
 ### Project structure
 ```
-app                               __The web app folder__
+app                               The web app folder
 |____templates                    The static resources for web app
 |    |___go.html                  Page for predicting message
 |    |___master.html              Home page
 |____run.py                       Routers and entry point for web app
-data                              **Contains dataset**
+data                              Contains dataset
 |____disaster_messages.csv        Raw data of messages
 |____disaster_categories.csv      Raw data of categories
 |____DisasterRepsponse.db         Processed data
 |____process_data.py              Python script to process data
-model                             ** Contains model file and training script **
+model                             Contains model file and training script
 |____train_classifier.py          Python script to create, train and save model
 |____classifier.pkl               Saved model
-images                            **Images uses in readme**
+images                            Images uses in readme
 requirements_conda.txt            Use to install anaconda environment
 README.md
 ```
