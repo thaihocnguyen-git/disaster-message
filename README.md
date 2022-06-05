@@ -4,6 +4,9 @@
     This project create a machine learning pipeline using scikit-learn to classify message from
     disaster message dataset provided by [Figure Eight](https://www.figure-eight.com/).
 
+    This classification can help to classify the message automatically and redirect the message
+    to the organization that has responsibility to this disaster.
+
 ### Dataset
     The disaster dataset includes text messages about disasters that is labeled into 36 catergories:
         1. 'related'
