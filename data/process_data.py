@@ -4,6 +4,7 @@ import pandas as pd
 from pandas import DataFrame
 from sqlalchemy import create_engine
 
+
 def load_data(messages_filepath: str, categories_filepath: str) -> DataFrame:
     """
     Load data from csv files into DataFrame format.
@@ -56,6 +57,10 @@ def load_data(messages_filepath: str, categories_filepath: str) -> DataFrame:
             # convert column from string to numeric
             categories[column] = pd.to_numeric(categories[column])
 
+        # There is one variable that has 3 value {0, 1, 2}
+        # We're going assume 2 as 1
+        categories['related'] = categories['related'].replace(2, 1)
+
         return categories
 
     # read csv files
@@ -102,7 +107,6 @@ def save_data(df: DataFrame, database_filename: str) -> None:
     database_filename : str
         The table name will be saved into database.
     """
-    
     engine = create_engine(f'sqlite:///{database_filename}')
     df.to_sql("disaster_message", engine, if_exists="replace", index=False)
 
