@@ -41,8 +41,10 @@
         33. 'food'
         34. 'shelter'
         35. 'clothing'
-        36. 'money',
-    ![./images/categories_sum.PNG](https://github.com/thaihocnguyen-git/disaster-message/blob/master/images/categories_sum.PNG)
+        36. 'money'
+        
+       
+![./images/categories_sum.PNG](https://github.com/thaihocnguyen-git/disaster-message/blob/master/images/categories_sum.PNG)
 ### Project structure
 ```
 app                               The web app folder
