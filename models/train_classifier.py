@@ -97,10 +97,19 @@ def build_model() -> Pipeline:
     pipeline = Pipeline([
         ('vect', CountVectorizer(tokenizer=tokenize)),
         ('tfidf', TfidfTransformer()),
-        ('classifier', MultiOutputClassifier(RandomForestClassifier(verbose=1, n_jobs=4)))
+        ('classifier', MultiOutputClassifier(
+            RandomForestClassifier(verbose=1, n_jobs=8)))
     ])
 
-    return pipeline
+    # config GridSearchCV
+    parameters = {
+        'classifier__estimator__bootstrap': [True, False],
+        'classifier__estimator__max_depth': [30, 50, 90, None]
+    }
+
+    cv = GridSearchCV(pipeline, parameters)
+
+    return cv
 
 
 def evaluate_model(model, X_test, Y_test, category_names) -> None:
