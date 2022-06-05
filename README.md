@@ -45,7 +45,7 @@
     (./images/categories_sum.PNG)
 ### Project structure
 ```
-app                               **The web app folder**
+app                               __The web app folder__
 |____templates                    The static resources for web app
 |    |___go.html                  Page for predicting message
 |    |___master.html              Home page
