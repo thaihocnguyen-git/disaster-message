@@ -42,7 +42,7 @@
         34. 'shelter'
         35. 'clothing'
         36. 'money',
-    (./images/categories_sum.PNG)
+    [./images/categories_sum.PNG](https://github.com/thaihocnguyen-git/disaster-message/blob/master/images/categories_sum.PNG)
 ### Project structure
 ```
 app                               The web app folder
@@ -76,12 +76,12 @@ README.md
 
 3. Go to http://0.0.0.0:3001/
 4. The website will be looked like
-(./images/website1.PNG)
-(./images/website2.PNG)
+[(./images/website1.PNG)](https://github.com/thaihocnguyen-git/disaster-message/blob/master/images/website1.PNG)
+[(./images/website2.PNG)](https://github.com/thaihocnguyen-git/disaster-message/blob/master/images/website2.PNG)
 
 ### Imbalance data
 The dataset is imbalance. For example in the water label:
-(./images/water.PNG)
+[(./images/water.PNG)](https://github.com/thaihocnguyen-git/disaster-message/blob/master/images/water.png)
 
 ### Further work
 1. Research ways to handle [imbalance data](https://imbalanced-learn.org/stable/)
