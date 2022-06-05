@@ -104,7 +104,7 @@ def save_data(df: DataFrame, database_filename: str) -> None:
     """
     
     engine = create_engine(f'sqlite:///{database_filename}')
-    df.to_sql("disaster_message", engine, if_exists="Replace", index=False)
+    df.to_sql("disaster_message", engine, if_exists="replace", index=False)
 
 
 def main():
