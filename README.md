@@ -55,7 +55,7 @@ data                              **Contains dataset**
 |____disaster_categories.csv      Raw data of categories
 |____DisasterRepsponse.db         Processed data
 |____process_data.py              Python script to process data
-model                             **Contains model file and training script**
+model                             ** Contains model file and training script **
 |____train_classifier.py          Python script to create, train and save model
 |____classifier.pkl               Saved model
 images                            **Images uses in readme**
